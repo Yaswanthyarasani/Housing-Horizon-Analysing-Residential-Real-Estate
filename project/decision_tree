@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="hasPool <= 0.5\ngini = 0.22\nsamples = 8000\nvalue = [6991, 1009]\nclass = 0", fillcolor="#e99356"] ;
+1 [label="gini = 0.0\nsamples = 4026\nvalue = [4026, 0]\nclass = 0", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="isNewBuilt <= 0.5\ngini = 0.379\nsamples = 3974\nvalue = [2965, 1009]\nclass = 0", fillcolor="#eeac7c"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 1984\nvalue = [1984, 0]\nclass = 0", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="hasYard <= 0.5\ngini = 0.5\nsamples = 1990\nvalue = [981, 1009]\nclass = 1", fillcolor="#fafcfe"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 981\nvalue = [981, 0]\nclass = 0", fillcolor="#e58139"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1009\nvalue = [0, 1009]\nclass = 1", fillcolor="#399de5"] ;
+4 -> 6 ;
+}
